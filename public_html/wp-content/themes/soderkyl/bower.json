@@ -1,0 +1,12 @@
+{
+  "name": "jason",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Jason Naso Nitea SE <jason.naso@nitea.se>"
+  ],
+  "dependencies": {
+    "jquery-nitea-equal-height": "^1.2.0",
+    "bootstrap": "^4.1.3"
+  }
+}

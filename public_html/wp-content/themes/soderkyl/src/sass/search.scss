@@ -1,0 +1,116 @@
+.search
+{
+    .search-results
+    {
+        .search-result
+        {   
+            @include flexbox;
+            @include flex-direction(column);
+            @include flex-justify-content(space-between);
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-between;
+
+            .search-result-thumbnail
+            {
+                position: relative;
+                text-align: center;
+
+                a
+                {
+                    display: block;
+                    margin-bottom: ($grid-gutter-width * .5);
+
+                    @include media-breakpoint-up(lg)
+                    {
+                        max-width: 200px;
+                        margin-bottom: 0;
+                    }
+
+                    &:after
+                    {   
+                        @include flexbox;
+                        @include flex-direction(column);
+                        @include flex-justify-content(center);
+                        // display: flex;
+                        // flex-direction: column;
+                        // justify-content: center;
+
+                        background-color: rgba(#284b96, .75);
+
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 10;
+
+                        @extend %fa-icon;
+                        @extend .fas;
+                        content: fa-content($fa-var-eye);
+
+                        color: #fff;
+                        font-size: 48px;
+                        text-align: center;
+
+                        opacity: 0;
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    &:hover
+                    {
+                        &:after
+                        {
+                            opacity: 1;
+                            font-size: 72px;
+                        }
+                    }
+
+                    img
+                    {
+                        width: 100%;
+                        height: auto;
+
+                        @include media-breakpoint-up(lg)
+                        {
+                            max-width: 200px;
+                        }
+                    }
+                }
+            }
+
+            .search-result-title
+            {
+                h1, h2, h3, h4, h5, h6
+                {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                a
+                {
+                    display: flex;
+                    margin-bottom: ($grid-gutter-width * .25);
+                    padding: 0;
+                    text-decoration: none;
+                    transition: color .25s ease-in-out;
+                }
+            }
+
+            .search-result-description
+            {
+                line-height: 26px;
+
+                p
+                {
+                    padding: 0;
+
+                    &:last-child
+                    {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

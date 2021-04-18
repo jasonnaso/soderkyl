@@ -1,0 +1,234 @@
+$primary-color: #284b96;
+$primary-color-light-blue: #bcdef2;
+$primary-color-two: #5e83d4; 
+$primary-color-dark-blue: #1C3774;
+$primary-color-orange: #f78e1e;
+$white: #fff;
+$primary-grey: #f0f4f7;
+$primary-title-color: #515050;
+$icon-color: #494b54;
+$mobile-padding: 25px;
+$section-padding: 80px 0;
+$mobile-section-padding: 40px 0;
+
+
+
+html, body
+{
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+} 
+body
+{
+	padding-top: 60px;
+
+	@include media-breakpoint-up(lg) 
+	{
+		padding-top: 130px;
+	}
+}
+a:hover
+{
+	text-decoration: none;
+}
+.grecaptcha-badge
+{
+	position: relative;
+	z-index: 400;
+}
+.center
+{
+	text-align: center;
+	@include flex-justify-content(center);
+}
+.row-centered 
+{
+    text-align:center;
+}
+.col-centered
+{
+    float: none;
+    margin: 0 auto;
+}
+.bold-custom
+{
+	font-weight: bold;
+}
+.hero-announcement h1 
+{
+	color: $white;
+	z-index: 250;
+	position: relative;
+	margin-bottom: 0;
+	font-size: 30px;
+	line-height: 34px;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: inline-block;
+	padding: 10px;
+
+
+	@media(min-width: 768px)
+	{
+		font-size: 40px;
+		line-height: 48px;
+		margin-bottom: 5px;
+	}
+}
+.hero-text 
+{
+	color: $white;
+	z-index: 250;
+	position: relative;
+	padding-top: 10px;
+	font-size: 22px;
+
+	@media(min-width: 768px)
+	{
+		font-size: 28px;
+	}
+}
+.section-title
+{
+	text-align: center;
+	color: $primary-title-color;
+	margin-bottom: 30px;
+	font-size: 26px;
+
+
+	@media(min-width: 768px)
+	{
+		margin-bottom: 50px;
+		font-size: 32px;
+	}
+
+}
+.page-title
+{
+	margin-top: 50px;
+	text-align: center;
+	color: $primary-title-color;
+	margin-bottom: 30px;
+
+	@media(min-width: 768px)
+	{
+		margin-bottom: 50px;
+	}
+}
+.mobile-padding-not-first:not(:first-child)
+{
+	padding-top: $mobile-padding;
+
+	@media(min-width: 768px)
+	{
+		padding-top: 0;
+	}
+}
+.mobile-padding
+{
+	padding-top: $mobile-padding;
+
+	@media(min-width: 768px)
+	{
+		padding-top: 0;
+	}
+}
+.center-mobile
+	{
+		text-align: center;
+	}
+@media(min-width: 768px)
+{
+	.center-mobile
+	{
+		text-align: left;
+	}
+}
+
+.section-padding
+{	
+	padding: $mobile-section-padding;
+
+	@media(min-width: 768px)
+	{
+		padding: $section-padding;
+	}
+}
+
+// Google map global
+
+.google-map-iframe
+{
+	line-height: 0;
+}
+
+.primary-button-large
+{
+	color: $white;
+    background: $primary-color-dark-blue;
+    border: none;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    line-height: 1.4;
+   -webkit-transition: background-color 180ms linear, color 180ms linear;
+   -moz-transition: background-color 180ms linear, color 180ms linear;
+   -o-transition: background-color 180ms linear, color 180ms linear;
+   -ms-transition: background-color 180ms linear, color 180ms linear;
+   transition: background-color 180ms linear, color 180ms linear;
+
+
+    @media(min-width: 768px)
+    {
+    	margin-top: 0;
+    	max-width: 350px;
+    }
+ 	&:hover
+    {
+       	background: #244594;
+		color: #fff;
+    }
+}
+
+.primary-button-small
+{
+	color: $white;
+	position: relative;
+	z-index: 250;
+	background: $primary-color-dark-blue;
+	text-transform: uppercase;
+	font-size: 14px;
+	border: none;
+	max-width: 130px; 
+	min-width: 100px;
+	text-align: center;
+	margin: 0 auto;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0;
+	text-align: center;
+	padding: 5px 20px;
+	-webkit-transition: background-color 180ms linear, color 180ms linear;
+	-moz-transition: background-color 180ms linear, color 180ms linear;
+	-o-transition: background-color 180ms linear, color 180ms linear;
+	-ms-transition: background-color 180ms linear, color 180ms linear;
+	transition: background-color 180ms linear, color 180ms linear;
+}
+.primary-button-small:hover
+{
+   	background: #244594;
+	color: #fff;
+}
+

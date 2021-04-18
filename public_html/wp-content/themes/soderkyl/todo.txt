@@ -1,0 +1,105 @@
+/////////////////////////////Testing////////////////////////////
+
+
+Go through the leverans kontol list for this and for söderkyl
+
+
+
+Fix all flex with webkit!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+
+
+
+
+
+
+/**** Chrome Mobil(Safari) ****/
+
+Testade på Riktig mobil och alla läget: Stor / Laptop / Ipad / Mobil (CHROME)
+
+Startpage: Nav / Sidhuvud / Sidfot / Alla länkar / Alla knappar / Om oss counter / Kontakt formulär (Välidering, välidering text och moadal) / Delvis kontroll på popup
+Har ändrat epost adress på formulär till info@soderkyl.se
+Allt ser bra ut och funkar
+
+/**** Safari / Firefox ****/
+
+Testade på firefox och safari alla läget: Stor / Laptop / Ipad / Mobil:
+
+Startpage: Nav / Sidhuvud / Sidfot / Alla länkar / Alla knappar / Om oss counter / Kontakt formulär (Välidering, välidering text och moadal) / Delvis kontroll på popup
+Testade allt på: Riktig mobil och alla läget Stor / Laptop / Ipad / Mobil
+Har ändrat epost adress på formulär till info@soderkyl.se
+
+
+/**** IE Edge ****/
+Testadeestat alla sidor på IE / Edge:
+Startpage: Nav / Sidhuvud / Sidfot / Alla länkar / Alla knappar / Om oss counter / Kontakt formulär (Välidering, välidering text och moadal) / Delvis kontroll på popup
+Testade allt på: Riktig mobil och alla läget Stor / Laptop / Ipad / Mobil
+Har ändrat epost adress på formulär till info@soderkyl.se
+Genomgång alla sidor och länkar inkl produktsidorna
+
+
+/////////////////New TO Do March 19//////////////////////
+
+
+Att göra JASON:
+
+Change out the clock image
+SMTP set up in loopia
+Counter på startsidan körs inte om man läddar om i "om oss" läget. (When the window is on the om oss sektion on the startpage and you load the page again the counter does not scroll)
+
+
+/////////////////////////Typography check///////////////////////////
+
+
+Mobile font sizes:
+
+Startsida: 
+Hero announcement: 40px / 30px h1
+Hero text: 24px / 22px 
+Hero btns: 16px 
+
+Section titles: 32px / 26px. H2
+
+Puffar: 
+Title: 24px / 22px h2 (“mid sizes titles”)
+Text: 16px
+
+Tjänster sida
+Service sections titles: 24px 
+Projekt: 24px h3
+
+Referenser:
+Titles 24px h3
+
+Om oss företaget:
+Titles 24px h3
+
+//////////////////////Effects////////////////
+
+Parralax?
+
+Hover on puffar
+Hero fade in
+Loader for heros?
+
+
+
+Form check:
+Startsida.   Bra
+http://soderkyl.se.nitea.net/tjanster/tvattstugor/   Bra
+http://soderkyl.se.nitea.net/kontakt/.  Bra
+
+
+
+info@soderkyl.se
+
+Söderkyl
+
+Tack för meddelande
+
+ Tack för meddelande

@@ -1,0 +1,194 @@
+.about-page
+{	
+	.about-hero-section
+	{
+		.about-hero-image
+		{
+			text-align: center;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100%;
+			position: relative; 
+			padding-top: 10vh;
+			padding-bottom: 12vh;
+			
+			@media(min-width: 768px)
+			{
+				padding-top: 20vh;
+				padding-bottom: 20vh;
+			}
+		}
+		.about-hero-image-overlay 
+		{
+			background-size: cover;
+			content: "";
+			display: block;
+			position: absolute;
+			background-color: #000;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 25;
+			opacity: 0.2;
+		}
+		.about-hero-cta-wrapper
+		{	
+			padding-top: 1em;
+			padding-bottom: 0;
+			
+			@media(min-width: 768px)
+			{
+				padding-top: 4em;
+				padding-bottom: 3em;
+			}
+
+			.about-hero-cta
+			{
+				color: $white;
+			    background-color: transparent;
+			    border: 2px $primary-color solid;
+			    position: relative;
+			    z-index: 100;
+			    cursor: pointer;
+			    min-height: 80px;
+			    @include flexbox;
+			    @include flex-align-items(center);
+			    @include flex-justify-content(center);
+			    // display: flex;
+			    // align-items: center;
+			    // justify-content: center;
+			    font-size: 18px;
+			    max-width: 280px;
+			    text-align: center;
+			    margin: 0 auto;
+			    margin-top: 15px;
+			    line-height: 1.2;
+			   -webkit-transition: background-color 240ms linear, color 240ms linear;
+			   -moz-transition: background-color 240ms linear, color 240ms linear;
+			   -o-transition: background-color 240ms linear, color 240ms linear;
+			   -ms-transition: background-color 240ms linear, color 240ms linear;
+			   transition: background-color 240ms linear, color 240ms linear;
+
+			    @media(min-width: 768px)
+			    {
+			    	margin-top: 0;
+			    	max-width: 350px;
+			    }
+			 	&:hover
+		 	    {
+		 	        background:rgba(255,255,255, 0.6);
+		 	    	color: $primary-color;
+		 	    }
+			}
+		}
+		.about-hero-svg
+		{
+			width: 100%;
+			height: auto;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: 250;
+		}
+	}
+	.about-us
+	{	
+		background-color: $primary-grey; 
+
+		&:nth-child(odd)
+		{
+			.row
+			{
+				> div
+				{
+					&:nth-child(1)
+					{
+	 					order: 1;
+					}
+
+					&:nth-child(2)
+					{
+	 					order: 1;
+					}
+				}
+			}
+	 	}
+	
+		@media (min-width: 768px)
+		{
+		&:nth-child(odd)
+			{
+				.row
+				{
+					> div
+					{
+						&:nth-child(1)
+						{
+		 					order: 2;
+						}
+
+						&:nth-child(2)
+						{
+		 					order: 1;
+						}
+					}
+				}
+		 	}
+	 	}
+	 	.about-us-bg-image
+	 	{
+	 		background-position: center;
+	 		background-repeat: no-repeat;
+	 		background-size: cover;
+	 	}
+	 	.about-us-description-title
+	 	{
+			h3
+	 		{	
+	 			padding-top: 15px;
+	 			padding-bottom: 15px;
+	 			font-size: 22px;
+
+	 			@media(min-width: 768px)
+	 			{
+	 				font-size: 24px;
+	 			}
+	 		}
+	 	}
+	 	.about-us-description-text
+	 	{
+	 		padding-bottom: 15px;
+	 	}
+	 	.min-height-360
+	 	{
+	 		min-height: 200px;
+
+	 		@media(min-width: 768px)
+	 		{
+	 			min-height: 360px;
+	 		}
+	 	}
+	 	.video-container
+	 	{	
+	 		@include flexbox;
+	 		@include flex-align-items(center);
+	 		@include flex-justify-content(center);
+	 		// display: flex;
+	 		// align-items: center;
+	 		// justify-content: center;
+	 		background-color: #000;
+	 	}
+	}
+ 	.stadsmission
+ 	{	
+ 		background-color: $primary-grey;
+ 		
+ 		.stadsmission-text
+ 		{
+			padding-top: 30px;
+ 		}
+ 	}
+
+} 

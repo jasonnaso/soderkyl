@@ -1,0 +1,156 @@
+.contact-form 
+{
+	background-color: $primary-grey;
+	
+	.form-bg-image 
+	{
+	  background-image: url("/wp-content/themes/soderkyl/images/form-bg-image.png");
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  padding: 80px 0;
+	}
+
+.retypeEmail
+	{
+		display: none;
+	}
+	.call-direct-for-booking, .fill-in-contact-form
+	{
+		margin-bottom: 10px;
+	}
+	.custom-form
+	{
+		height: 60px;
+		border: none;
+	}
+	.form-group-policy
+	{
+		margin-bottom: 7px;
+	}
+	.form-group-message
+	{
+		margin-bottom: 7px;
+	}
+	.custom-form-message
+	{
+		border: none;
+	}
+	.form-telephone
+	{
+		padding-bottom: 20px;
+		
+		@media(min-width: 768px)
+		{
+			padding-bottom: 0;
+		}
+	}
+	.contact-information
+	{	
+		margin-top: 15px;
+
+		@media(min-width: 768px)
+		{
+			margin-top: 0;
+		}
+		a
+		{
+			word-wrap: break-word;
+		}
+	}
+
+}
+.help-block
+{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373
+}
+
+.has-success .help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline,
+.has-success.radio label,
+.has-success.radio-inline label,
+.has-success.checkbox-inline label
+{
+    color: $success
+}
+
+.has-success .form-control
+{
+    border-color: $success;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075)
+}
+
+.has-success .form-control:focus
+{
+    border-color: $success;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(theme-color("success"), .25);
+    box-shadow: 0 0 0 0.2rem rgba(theme-color("success"), .25);
+}
+
+.has-success .input-group-addon
+{
+    color: $success;
+    border-color: $success;
+    background-color: #dff0d8
+}
+
+.has-success .form-control-feedback
+{
+    color: $success
+}
+
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label
+{
+    color: $danger
+}
+
+.has-error .form-control
+{
+    border-color: $danger;
+}
+
+.has-error .form-control:focus
+{
+    border-color: $danger;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(theme-color("danger"), .25);
+    box-shadow: 0 0 0 0.2rem rgba(theme-color("danger"), .25);
+}
+
+.has-error .input-group-addon
+{
+    color: $danger;
+    border-color: $danger;
+    background-color: #f2dede
+}
+
+.has-error .form-control-feedback
+{
+    color: $danger
+}
+
+.has-feedback label ~ .form-control-feedback
+{
+    top: 25px
+}
+
+.has-feedback label.sr-only ~ .form-control-feedback
+{
+    top: 0
+}

@@ -1,0 +1,28 @@
+// .hero-announcement h1
+// {
+// 	font-size: 26px!important;
+// 	margin-bottom: 0;
+
+// 	@media(min-width: 768px)
+// 	{
+// 		font-size: 40px;
+// 	}
+// }
+// .hero-text
+// {
+// 	font-size: 22px;
+
+// 	@media(min-width: 768px)
+// 	{
+// 		font-size: 30px;
+// 	}
+// }
+
+p, h1, h2, h3, h4, h5, h6
+{
+	margin: 0; 
+	padding: 0;
+	padding-bottom: 10px;
+	color: #515050;
+
+}

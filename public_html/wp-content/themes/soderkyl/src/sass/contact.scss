@@ -1,0 +1,85 @@
+.contact-page
+{	
+	.google-map-hero
+	{	
+		.container-fluid
+		{
+			margin: 0;
+			padding: 0;
+		}
+		.col-md-6
+		{ 
+			margin: 0;
+			padding: 0;
+		}
+		.row
+		{
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.contact-hero
+		{
+			min-height: 300px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			@media(min-width: 768px)
+			{
+				min-height: 450px;
+			}
+		}
+	}
+	.contact-list
+	{
+		.contact-section
+		{
+			.contact-column:not(:last-child)
+			{
+				padding-bottom: 40px;
+			}
+			.position-title
+			{	
+				h3
+		 		{	
+		 			padding-bottom: 15px;
+		 			font-size: 22px!important;
+
+		 			@media(min-width: 768px)
+		 			{
+		 				font-size: 24px!important;
+		 				padding-bottom: 0!important;
+		 			}
+		 		}
+			}
+			.contact-information
+			{	
+				box-sizing: border-box; 
+				background-color: $primary-grey;
+				padding: 15px;
+				min-height: 140px;
+				@include flexbox;
+				@include flex-align-items(center);
+				@include flex-justify-content(center);
+				// display: flex;
+				// align-items: center;
+				// justify-content: center;
+				margin-bottom: 15px;
+
+				p
+				{
+					padding: 0;
+				}
+
+				@media(min-width: 768px)
+				{
+					margin-top: 15px;
+				}
+				a
+				{
+					word-wrap: break-word;
+				}
+			}
+		}
+	}
+}

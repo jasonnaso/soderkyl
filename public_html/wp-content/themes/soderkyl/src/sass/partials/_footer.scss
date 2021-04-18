@@ -1,0 +1,93 @@
+footer
+{
+	background-color: $primary-color;
+	
+	p
+	{
+		color: #fff;
+	}
+	.footer-address
+	{
+		text-align: center;
+		color: #fff;
+		padding: 15px 0;
+
+		@media(min-width: 768px)
+		{
+			text-align: left;
+			padding: 0;
+		}
+		a
+		{
+			color: #fff;
+		}
+	}
+	.footer-scroll
+	{
+		text-align: center;
+		margin: 0 auto;
+		
+		.fa
+		{
+			color: #fff;
+			font-size: 50px;
+			cursor: pointer;
+		}
+		a
+		{
+			color: lighten($primary-color, 30%);
+			text-decoration: none;
+		}
+		.footer-cookies
+		{
+			padding-top: 20px;
+		}
+		@keyframes bounce 
+		{
+			  from 
+			  {
+			    transform: translateY(0px);
+			  }
+			  to 
+			  {
+			    transform: translateY(-15px);
+			  }
+		}
+		@-webkit-keyframes bounce 
+		{
+			  from 
+			  {
+			    transform: translateY(0px);
+			  }
+			  to 
+			  {
+			    transform: translateY(-15px);
+			  }
+		}
+	}
+	.footer-open-times
+	{
+		text-align: center;
+		color: #fff;
+		
+		@media(min-width: 768px)
+		{
+			text-align: right;
+		}
+	}
+}
+.nitea-cookie-info-wrapper
+{	
+	padding: 5px!important;
+	p
+	{
+		padding-top: 10px!important;
+		color: #fff;
+
+		@media(min-width: 768px)
+		{
+			padding: 0!important;
+			margin: 0!important;
+		}
+	}
+}
